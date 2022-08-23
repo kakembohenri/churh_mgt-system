@@ -1,0 +1,45 @@
+.notification {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-130%);
+    z-index: 100;
+    animation: slidedown 5s 1s 1 cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    box-shadow: 0rem 0rem 1rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.failure {
+    background: #ff8888;
+}
+
+.success {
+    background: #b5fab5;
+
+}
+
+@keyframes slidedown {
+
+    0%,
+    100% {
+        transform: translateY(-130%);
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        transform: translateY(180%);
+        opacity: 1;
+    }
+}

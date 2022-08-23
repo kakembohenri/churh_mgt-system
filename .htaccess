@@ -1,0 +1,9 @@
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+#RewriteCond %{HTTPS} !=On
+#RewriteCond ^/?(.*) https://${SERVER_NAME}/$1 [R,L]
+
+ErrorDocument 404 '<h1>Page Not found </h1>'
+ErrorDocument 500 '<h1>Something went wrong On Our Side</h1>'
+ErrorDocument 503 '<h1>Something went wrong</h1>'

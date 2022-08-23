@@ -1,0 +1,56 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 3rem;
+    background: white;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-sub {
+    background-color: limegreen;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.price-container {
+    display: flex;
+    list-style: none;
+}
+
+.period {
+    margin: 0;
+    list-style: none;
+}
+
+.prices {
+    list-style: none;
+}
